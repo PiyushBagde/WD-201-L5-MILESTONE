@@ -46,7 +46,7 @@ module.exports = (sequelize, DataTypes) => {
       console.log("\n");
 
       console.log("Due Later");
-      // FILL IN HERE
+      // FILL IN HERE`
       console.log(
         (await Todo.dueLater())
           .map((todo) => {
@@ -91,8 +91,7 @@ module.exports = (sequelize, DataTypes) => {
           where: {
             id: id,
           },
-        }
-      );
+        });
     }
 
     displayableString() {
